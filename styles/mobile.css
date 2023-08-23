@@ -1,11 +1,11 @@
 :root {
-	--primary-strong: hsl(172, 67%, 45%);
-	--very-dark: hsl(183, 100%, 15%);
-	--dark-grayish: hsl(186, 14%, 43%);
-	--grayish: hsl(186, 22%, 53%);
-	--light-grayish: hsl(185, 41%, 84%);
-	--very-light: hsl(180, 46%, 93%);
-	--white: hsl(0, 0%, 100%);
+	--primary-strong: #26c0ab;
+	--very-dark: #00494d;
+	--dark-grayish: #5e7a7d;
+	--grayish: #6d9ca2;
+	--light-grayish: #c5e4e7;
+	--very-light: #d2efef;
+	--white: #ffffff;
 }
 
 html {
@@ -28,6 +28,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: "Space Mono", monospace;
 	font-size: 1.6rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 img,
@@ -100,6 +106,12 @@ h6 {
 	border-radius: 1rem;
 }
 
+.section01__input--tip:focus {
+	outline: none;
+	border: 2px solid #00494d;
+	box-shadow: 0 0 3px #00494d;
+}
+
 .section01__h3--tip {
 	color: var(--dark-grayish);
 	font-size: 1.5rem;
@@ -150,6 +162,12 @@ h6 {
 	padding: 0 1rem;
 }
 
+.section01__container input:focus {
+	outline: none;
+	border: 2px solid #00494d;
+	box-shadow: 0 0 3px #00494d;
+}
+
 .section01__container input::placeholder {
 	text-align: center;
 	color: var(--dark-grayish);
@@ -170,6 +188,12 @@ h6 {
 	padding: 1rem 1rem;
 	margin-bottom: 1.5rem;
 	border-radius: 1rem;
+}
+
+.section01__input--people:focus {
+	outline: none;
+	border: 2px solid #00494d;
+	box-shadow: 0 0 3px #00494d;
 }
 
 .section02 {
@@ -229,6 +253,3 @@ h6 {
 	transition: 0.3s;
 	background-color: hsl(172, 67%, 55%);
 }
-
-/* - Mobile: 375px */
-/* - Desktop: 1440px */
