@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="/styles/mobile.css" />
+		<link rel="stylesheet" href="/styles/desktop.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -14,11 +15,15 @@
 	</head>
 	<body>
 		<main class="main">
-			<h1 class="main__h1">Tip Calculator</h1>
+			<h1 class="main__h1">$ Tip Calculator</h1>
 			<div class="main__container">
 				<section class="section01">
 					<p class="section01__p">Bill</p>
-					<input type="number" class="section01__input--tip" />
+					<input
+						type="number"
+						class="section01__input--tip"
+						placeholder="Write here..."
+					/>
 					<h3 class="section01__h3--tip">Select Tip %</h3>
 					<div class="section01__container">
 						<button>5%</button>
@@ -29,16 +34,20 @@
 						<input type="number" placeholder="Custom" />
 					</div>
 					<h3 class="section01__h3--people">Number of people</h3>
-					<input type="number" class="section01__input--people" />
+					<input
+						type="number"
+						class="section01__input--people"
+						placeholder="Write here..."
+					/>
 				</section>
 				<section class="section02">
 					<div class="section02__container--tip">
 						<h2>Tip Amount</h2>
-						<p>$4</p>
+						<p>$0</p>
 					</div>
 					<div class="section02__container--people">
 						<h2>Total</h2>
-						<p>$32</p>
+						<p>$0</p>
 					</div>
 					<button class="section02__button">RESET</button>
 				</section>
