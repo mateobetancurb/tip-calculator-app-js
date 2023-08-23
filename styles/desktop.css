@@ -1,0 +1,36 @@
+.main {
+	@media (width > 1024px) {
+		height: 100vh;
+	}
+}
+
+.main__container {
+	@media (width > 1024px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 80%;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+.section02 {
+	@media (width > 1024px) {
+		margin: 2rem;
+	}
+}
+
+.section02__container--people h2 {
+	@media (width > 1024px) {
+		color: var(--white);
+		font-size: 2rem;
+	}
+}
+
+.section02__container--people p {
+	@media (width > 1024px) {
+		color: var(--primary-strong);
+		font-weight: bold;
+		font-size: 4rem;
+	}
+}
