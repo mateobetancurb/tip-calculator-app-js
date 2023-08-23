@@ -2,9 +2,9 @@
 	--primary-strong: hsl(172, 67%, 45%);
 	--very-dark: hsl(183, 100%, 15%);
 	--dark-grayish: hsl(186, 14%, 43%);
-	--grayish: hsl(184, 14%, 56%);
+	--grayish: hsl(186, 22%, 53%);
 	--light-grayish: hsl(185, 41%, 84%);
-	--very-light: hsl(189, 41%, 97%);
+	--very-light: hsl(180, 46%, 93%);
 	--white: hsl(0, 0%, 100%);
 }
 
@@ -77,6 +77,7 @@ h6 {
 	background-color: var(--white);
 	width: 100%;
 	border-radius: 2rem;
+	padding-bottom: 3rem;
 }
 
 .section01 {
@@ -87,7 +88,7 @@ h6 {
 	color: var(--dark-grayish);
 	font-weight: bold;
 	margin-bottom: 1rem;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 .section01__input--tip {
@@ -96,11 +97,12 @@ h6 {
 	border: 0px;
 	padding: 1rem 1rem;
 	margin-bottom: 1rem;
+	border-radius: 1rem;
 }
 
 .section01__h3--tip {
 	color: var(--dark-grayish);
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	margin-bottom: 1.5rem;
 }
 
@@ -118,7 +120,7 @@ h6 {
 	color: var(--white);
 	text-align: center;
 	font-weight: bold;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	font-size: 2.5rem;
 	padding: 0.5rem 4rem;
 }
@@ -132,6 +134,7 @@ h6 {
 	width: 100%;
 	border: 0;
 	background-color: var(--very-light);
+	border-radius: 1rem;
 }
 
 .section01__container input::placeholder {
@@ -139,6 +142,73 @@ h6 {
 	color: var(--dark-grayish);
 	font-weight: bold;
 	font-size: 2rem;
+}
+
+.section01__h3--people {
+	color: var(--dark-grayish);
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.section01__input--people {
+	width: 100%;
+	background-color: var(--very-light);
+	border: 0px;
+	padding: 1rem 1rem;
+	margin-bottom: 1.5rem;
+	border-radius: 1rem;
+}
+
+.section02 {
+	background-color: var(--very-dark);
+	border-radius: 1rem;
+	width: 90%;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.section02__container--tip {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section02__container--tip h2 {
+	color: var(--white);
+	font-size: 1.4rem;
+}
+
+.section02__container--tip p {
+	color: var(--primary-strong);
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.section02__container--people {
+	display: flex;
+	justify-content: space-between;
+}
+
+.section02__container--people h2 {
+	color: var(--white);
+	font-size: 1.4rem;
+}
+
+.section02__container--people p {
+	color: var(--primary-strong);
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.sectio02__button {
+	width: 100%;
+	margin-top: 2rem;
+	background-color: var(--primary-strong);
+	border: 0;
+	color: var(--very-dark);
+	font-weight: bold;
+	padding: 0.5rem 0;
+	border-radius: 1rem;
 }
 
 /* - Mobile: 375px */
