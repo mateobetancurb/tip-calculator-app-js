@@ -114,9 +114,10 @@ h6 {
 	margin-bottom: 2rem;
 }
 
-.section01__container div {
+.section01__container button {
 	background-color: var(--very-dark);
 	width: 100%;
+	border: 0;
 	color: var(--white);
 	text-align: center;
 	font-weight: bold;
@@ -125,9 +126,20 @@ h6 {
 	padding: 0.5rem 4rem;
 }
 
-.section01__container div:nth-child(3) {
+.section01__container button:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: var(--primary-strong);
+}
+
+.section01__container button:nth-child(3) {
 	background-color: var(--primary-strong);
 	color: var(--very-dark);
+}
+
+.section01__container button:nth-child(3):hover {
+	background-color: var(--very-dark);
+	color: var(--white);
 }
 
 .section01__container input {
@@ -135,6 +147,7 @@ h6 {
 	border: 0;
 	background-color: var(--very-light);
 	border-radius: 1rem;
+	padding: 0 1rem;
 }
 
 .section01__container input::placeholder {
@@ -200,7 +213,7 @@ h6 {
 	font-size: 3rem;
 }
 
-.sectio02__button {
+.section02__button {
 	width: 100%;
 	margin-top: 2rem;
 	background-color: var(--primary-strong);
@@ -209,6 +222,12 @@ h6 {
 	font-weight: bold;
 	padding: 0.5rem 0;
 	border-radius: 1rem;
+}
+
+.section02__button:hover {
+	cursor: pointer;
+	transition: 0.3s;
+	background-color: hsl(172, 67%, 55%);
 }
 
 /* - Mobile: 375px */
