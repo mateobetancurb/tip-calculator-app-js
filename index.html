@@ -20,21 +20,24 @@
 				<section class="section01">
 					<p class="section01__p">Bill</p>
 					<input
+						id="price-input"
+						value=""
 						type="number"
 						class="section01__input--tip"
 						placeholder="Write here..."
 					/>
 					<h3 class="section01__h3--tip">Select Tip %</h3>
 					<div class="section01__container">
-						<button>5%</button>
-						<button>10%</button>
-						<button>15%</button>
-						<button>25%</button>
-						<button>50%</button>
+						<button value="5">5%</button>
+						<button value="10">10%</button>
+						<button value="15">15%</button>
+						<button value="25">25%</button>
+						<button value="50">50%</button>
 						<input type="number" placeholder="Custom" />
 					</div>
 					<h3 class="section01__h3--people">Number of people</h3>
 					<input
+						id="people-input"
 						type="number"
 						class="section01__input--people"
 						placeholder="Write here..."
@@ -43,15 +46,16 @@
 				<section class="section02">
 					<div class="section02__container--tip">
 						<h2>Tip Amount</h2>
-						<p>$0</p>
+						<p id="tip-amount">$0</p>
 					</div>
 					<div class="section02__container--people">
 						<h2>Total</h2>
-						<p>$0</p>
+						<p id="total-price">$0</p>
 					</div>
-					<button class="section02__button">RESET</button>
+					<button id="reset-button" class="section02__button">RESET</button>
 				</section>
 			</div>
 		</main>
 	</body>
+	<script src="/index.js" defer></script>
 </html>
