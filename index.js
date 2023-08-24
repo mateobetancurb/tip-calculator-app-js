@@ -51,8 +51,9 @@ function calculateTip() {
 				(inputPriceValue * buttonPercentValue) / 100 / inputNumberPeopleValue;
 		}
 
-		const totalWithoutTip = inputPriceValue + inputCustomTip;
-		totalPriceValue = totalWithoutTip / inputNumberPeopleValue + tipAmountValue;
+		const totalWithoutTip = inputPriceValue + tipAmountValue;
+
+		totalPriceValue = totalWithoutTip / inputNumberPeopleValue;
 	}
 
 	tipAmount.textContent = formatCurrency(
