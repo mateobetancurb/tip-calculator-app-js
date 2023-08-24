@@ -43,8 +43,13 @@ function formatCurrency(amount) {
 
 function calculateTip() {
 	if (inputNumberPeopleValue > 0) {
-		tipAmountValue =
-			(inputPriceValue * buttonPercentValue) / 100 / inputNumberPeopleValue;
+		if (inputCustomTip) {
+			tipAmountValue =
+				(inputPriceValue * inputCustomTip) / 100 / inputNumberPeopleValue;
+		} else {
+			tipAmountValue =
+				(inputPriceValue * buttonPercentValue) / 100 / inputNumberPeopleValue;
+		}
 
 		const totalWithoutTip = inputPriceValue + inputCustomTip;
 		totalPriceValue = totalWithoutTip / inputNumberPeopleValue + tipAmountValue;
