@@ -35,6 +35,12 @@ numberPeopleInput.addEventListener("input", (event) => {
 	calculateTip();
 });
 
+function formatCurrency(amount) {
+	return `$${Math.round(amount)
+		.toString()
+		.replace(/\B(?=(\d{3})+(?!\d))/g, ",")}`;
+}
+
 function calculateTip() {
 	if (inputNumberPeopleValue > 0) {
 		tipAmountValue =
@@ -44,10 +50,11 @@ function calculateTip() {
 		totalPriceValue = totalWithoutTip / inputNumberPeopleValue + tipAmountValue;
 	}
 
-	tipAmount.textContent = `$${Math.round(
+	tipAmount.textContent = formatCurrency(
 		tipAmountValue ? tipAmountValue : inputCustomTip
-	)}`;
-	totalPrice.textContent = `$${Math.round(totalPriceValue)}`;
+	);
+
+	totalPrice.textContent = formatCurrency(totalPriceValue);
 }
 
 resetButton.addEventListener("click", () => {
